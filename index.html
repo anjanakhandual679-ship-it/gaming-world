@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming World | Ultimate Gaming Zone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080b14;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: #111827;
+            padding: 18px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 2px solid #00f7ff;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00f7ff;
+            text-shadow: 0 0 12px #00f7ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #00f7ff;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 350px;
+            padding: 75px 20px;
+            text-align: center;
+            background:
+                radial-gradient(ellipse at top, #173454, #080b14 70%);
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 8vw, 55px);
+            color: #00f7ff;
+            text-shadow: 0 0 20px #007bff;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            color: #d1d5db;
+            line-height: 1.8;
+            max-width: 550px;
+            margin: 0 auto 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00e5ff;
+            color: #07111c;
+            padding: 13px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 0 18px #00e5ff;
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 45px 16px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 29px;
+            color: #00f7ff;
+            margin-bottom: 12px;
+        }
+
+        .section-desc {
+            color: #aab4c5;
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+        /* GAME CARDS */
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .game-card {
+            background: linear-gradient(
+                145deg, #182235, #101522
+            );
+            border: 1px solid #263b55;
+            border-radius: 14px;
+            padding: 27px 18px;
+            transition: 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-7px);
+            border-color: #00f7ff;
+            box-shadow: 0 0 18px #00f7ff33;
+        }
+
+        .game-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .game-card p {
+            color: #aab4c5;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* TIPS */
+
+        .tips {
+            background: #0e1421;
+        }
+
+        .tip-box {
+            max-width: 700px;
+            margin: 15px auto;
+            padding: 20px;
+            background: #182235;
+            border-left: 4px solid #00f7ff;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .tip-box h3 {
+            color: #00f7ff;
+            margin-bottom: 8px;
+        }
+
+        .tip-box p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* ABOUT */
+
+        .about {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.9;
+            color: #cbd5e1;
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 25px 15px;
+            text-align: center;
+            background: #111827;
+            border-top: 1px solid #263b55;
+            color: #9ca3af;
+            line-height: 1.8;
+        }
+
+        footer strong {
+            color: #00f7ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🎮 GAMING WORLD</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#tips">Tips</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+
+    <header class="hero" id="home">
+        <h1>LEVEL UP YOUR GAME!</h1>
+
+        <p>
+            Welcome to Gaming World!
+            Explore your favourite games, discover gaming tips
+            and enter the ultimate gaming zone.
+        </p>
+
+        <a href="#games" class="btn">EXPLORE GAMES 🚀</a>
+    </header>
+
+    <!-- GAMES -->
+
+    <section id="games">
+        <h2 class="section-title">🔥 POPULAR GAMES</h2>
+
+        <p class="section-desc">
+            Discover games and explore your gaming universe.
+        </p>
+
+        <div class="game-grid">
+
+            <div class="game-card">
+                <div class="game-icon">🔫</div>
+                <h3>Free Fire</h3>
+                <p>
+                    Explore battle royale gameplay,
+                    strategies and beginner tips.
+                </p>
+                <button class="btn"
+                    onclick="showGame('Free Fire')">
+                    EXPLORE
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🎯</div>
+                <h3>BGMI</h3>
+                <p>
+                    Discover survival strategies,
+                    teamwork and battle royale tips.
+                </p>
+                <button class="btn"
+                    onclick="showGame('BGMI')">
+                    EXPLORE
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">⛏️</div>
+                <h3>Minecraft</h3>
+                <p>
+                    Explore creativity, crafting,
+                    building and adventure.
+                </p>
+                <button class="btn"
+                    onclick="showGame('Minecraft')">
+                    EXPLORE
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🏎️</div>
+                <h3>GTA V</h3>
+                <p>
+                    Discover open-world gameplay,
+                    vehicles and missions.
+                </p>
+                <button class="btn"
+                    onclick="showGame('GTA V')">
+                    EXPLORE
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">⚔️</div>
+                <h3>Call of Duty</h3>
+                <p>
+                    Explore action gameplay,
+                    maps and multiplayer strategies.
+                </p>
+                <button class="btn"
+                    onclick="showGame('Call of Duty')">
+                    EXPLORE
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🏁</div>
+                <h3>Asphalt</h3>
+                <p>
+                    Discover racing games,
+                    cars and driving challenges.
+                </p>
+                <button class="btn"
+                    onclick="showGame('Asphalt')">
+                    EXPLORE
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TIPS -->
+
+    <section class="tips" id="tips">
+        <h2 class="section-title">💡 GAMING TIPS</h2>
+
+        <p class="section-desc">
+            Improve your skills with these simple tips.
+        </p>
+
+        <div class="tip-box">
+            <h3>🎯 Practice Regularly</h3>
+            <p>
+                Practise game controls and aim in training
+                modes to improve your skills.
+            </p>
+        </div>
+
+        <div class="tip-box">
+            <h3>⚙️ Adjust Your Settings</h3>
+            <p>
+                Choose comfortable sensitivity and control
+                settings for your device.
+            </p>
+        </div>
+
+        <div class="tip-box">
+            <h3>🤝 Play As A Team</h3>
+            <p>
+                Communicate with teammates and plan your
+                strategy before entering a match.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+        <h2 class="section-title">🌍 ABOUT US</h2>
+
+        <p class="about">
+            Gaming World is a gaming-themed website created
+            for gamers who love exploring different games.
+            Our goal is to bring gaming information, useful
+            tips and exciting discoveries together in one place.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>🎮 <strong>GAMING WORLD</strong></p>
+        <p>Explore Games. Discover More. Level Up!</p>
+        <p>© 2026 Gaming World. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showGame(game) {
+            alert(
+                "Welcome to " + game +
+                "!\n\nMore gaming information coming soon."
+            );
+        }
+    </script>
+
+</body>
+</html>
